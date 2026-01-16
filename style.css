@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Space';
+    src: url(/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Space';
+}
+
+h1 {
+    font-size: 48px;
+}
+
+header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    gap: 30px;
+    top: 40px;
+    right: 80px;
+}
+
+.git {
+    transition: all 0.1s ease-in;
+    background-color: #FF3700;
+    font-weight: bold;
+}
+
+.git:hover {
+    background-color: #bd3a15;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    align-items: center;
+    gap: 55px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.left p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.image img {
+    border-radius: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px
+}
+
+.buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px
+}
+
+.portfolio {
+    transition: all 0.1s ease-in;
+    background: transparent;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+.portfolio:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    gap: 25px;
+}
+
+
+.about p {
+    width: 840px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    gap: 20px;
+}
+
+.skills-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.badge {
+    color: black;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 23px;
+    height: 26px;
+}
+
+.first-row {
+    display: flex;
+    gap: 25px;
+}
+
+.second-row {
+    display: flex;
+    gap: 25px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    gap: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.project-card {
+    transition: all 0.1s ease-in;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 13px;
+    color: black;
+    gap: 15px;
+}
+
+.project-card:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+.main-img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 1px solid white;
+    position: relative;
+    top: px;
+}
+
+.project-card h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    gap: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(34, 31, 31);
+}
+
+.btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.btn h1 {
+    font-size: 12px;
+}
+
+.get-in-touch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blah-blah p {
+    font-size: 24px;
+}
+
+
+.blah-blah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .left {
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+}

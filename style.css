@@ -148,6 +148,20 @@ h1 {
     height: 26px;
 }
 
+.mail-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.1s ease-in;
+}
+
+.mail-link:hover {
+    gap: 15px;
+}
+
 .projects {
     display: flex;
     flex-direction: column;
